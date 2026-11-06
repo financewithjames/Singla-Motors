@@ -1,0 +1,2201 @@
+# PROJECT: SINGLA MOTORS – COMPLETE EV DEALERSHIP ERP, CRM, POS & ACCOUNTING SOFTWARE
+
+## **1. YOUR ROLE**
+
+Act as a world-class software architect, senior full-stack engineer, ERP product designer, database architect, accounting systems specialist, GST compliance specialist, cybersecurity engineer and UI/UX designer.
+
+Your task is to design and develop a complete, production-oriented, enterprise-grade web application for **SINGLA MOTORS**, an Indian multi-brand electric vehicle dealership business.
+
+Do not create a simple dashboard template, static website, UI prototype or basic CRUD application.
+
+Build a comprehensive, interconnected business management platform that manages the dealership's entire business lifecycle, including:
+
+- Multi-branch management.
+- CRM and lead management.
+- Electric vehicle inventory.
+- Spare parts and accessories inventory.
+- Battery inventory.
+- Purchase and supplier management.
+- Sales and POS billing.
+- GST-compliant invoicing.
+- Complete accounting and bookkeeping.
+- Financial management.
+- Expense management.
+- Cash and bank management.
+- Customer finance and loan management.
+- Old vehicle exchange management.
+- Service centre management.
+- Warranty management.
+- Employee management.
+- Business intelligence and analytics.
+- Financial fraud prevention.
+- Audit trails and security.
+- Taxation and GST reporting.
+
+The application must be fully functional, responsive, scalable and designed for real-world business operations in India.
+
+---
+
+# 2. BUSINESS INFORMATION
+
+Business Name: SINGLA MOTORS
+
+Business Type: Multi-brand electric vehicle dealership.
+
+Products:
+
+- Electric scooters.
+- Electric bikes.
+- Electric vehicle batteries.
+- Spare parts.
+- Accessories.
+- Charging equipment.
+- Other EV-related products.
+
+Business Model:
+
+- Retail vehicle sales.
+- Cash sales.
+- UPI sales.
+- Bank transfers.
+- Finance/loan-based sales.
+- Old vehicle exchange.
+- Spare parts sales.
+- Accessories sales.
+- Vehicle servicing.
+- Battery replacement.
+- Warranty services.
+
+Current Business Structure:
+
+- Two physical stores.
+- Both stores operate in different cities.
+- Approximately one to five employees.
+- One centralized business owner.
+
+Future Business Structure:
+
+- Unlimited branches.
+- Additional employees.
+- Centralized head-office operations.
+- Multiple GST registrations if required.
+- Future online vehicle sales.
+
+Primary Objective:
+
+Create one centralized software system through which the owner can monitor, control and manage every aspect of the business without depending on manual registers, Excel sheets or verbal reports from store managers.
+
+The owner must be able to access the complete business from a computer or mobile phone.
+
+---
+
+# 3. CORE PRODUCT PHILOSOPHY
+
+Follow these principles throughout the application:
+
+1. Every financial transaction must be digitally recorded.
+2. Every vehicle must have a unique digital identity.
+3. Every stock movement must be traceable.
+4. Every payment must be linked to a customer, invoice or business transaction.
+5. Every expense must have a category and supporting documentation.
+6. Every sensitive action must be permission-controlled.
+7. Every important modification must create an audit record.
+8. Employees must never be able to delete or secretly modify finalized financial records.
+9. The owner must have centralized visibility across all branches.
+10. The application must be easy enough for non-technical dealership employees.
+11. The accounting system must use proper double-entry bookkeeping.
+12. GST calculations must be configurable and compliant with applicable Indian tax rules.
+13. All modules must be interconnected rather than functioning as separate applications.
+14. Never use fabricated transaction data as actual business information.
+15. Never display fake financial figures as real dashboard metrics.
+
+The central operating philosophy is:
+
+"OWNER HAS CONTROL. EMPLOYEES HAVE PERMISSIONS. EVERY TRANSACTION LEAVES A TRACE."
+
+---
+
+# 4. DESIGN DIRECTION AND USER EXPERIENCE
+
+Create a premium, modern, professional ERP interface.
+
+Design inspiration:
+
+- Modern enterprise SaaS applications.
+- Stripe Dashboard.
+- Linear.
+- Shopify Admin.
+- Premium financial management software.
+- Modern automotive dealership management platforms.
+
+Visual characteristics:
+
+- Clean and minimal.
+- Professional.
+- Premium.
+- Modern typography.
+- Clear information hierarchy.
+- Excellent spacing.
+- High readability.
+- Consistent components.
+- Professional charts and data visualizations.
+- Minimal unnecessary decoration.
+- Fast and intuitive navigation.
+
+Suggested color palette:
+
+- Primary: Deep Navy Blue (#173B63).
+- Secondary: Slate Blue (#52677F).
+- Background: Soft Off-White (#F6F8FB).
+- Surface: White (#FFFFFF).
+- Primary text: Dark Charcoal (#202B38).
+- Secondary text: Muted Grey (#788493).
+- Success: Green.
+- Warning: Amber.
+- Danger: Red.
+- Borders: Light Grey.
+
+Use restrained colors for alerts and financial status indicators.
+
+Typography:
+
+- Inter or a similar modern sans-serif font.
+- Clear typography hierarchy.
+- Highly readable financial figures.
+- Consistent font weights and sizes.
+
+Create a professional sidebar navigation on desktop.
+
+The sidebar should support:
+
+- Collapsed mode.
+- Expanded mode.
+- Icons with labels.
+- Nested navigation.
+- Active page indication.
+- Tooltips in collapsed mode.
+
+Top navigation should contain:
+
+- Global search.
+- Branch selector.
+- Notifications.
+- Quick actions.
+- User profile.
+- Account settings.
+
+Create a professional login screen with Singla Motors branding.
+
+Use a consistent design system across all modules.
+
+---
+
+# 5. CRITICAL REQUIREMENT: FULLY RESPONSIVE MOBILE-FIRST DESIGN
+
+This requirement is mandatory.
+
+The entire software must work perfectly across:
+
+1. Desktop computers.
+2. Laptops.
+3. Tablets.
+4. Android smartphones.
+5. iPhones.
+6. Small mobile screens.
+
+Do not build a desktop-only interface and simply scale it down.
+
+Design dedicated responsive layouts for different screen sizes.
+
+## Desktop experience
+
+For screens above approximately 1024px:
+
+- Full sidebar navigation.
+- Multi-column dashboard layouts.
+- Advanced data tables.
+- Expandable filters.
+- Detailed charts.
+- Full-width forms where appropriate.
+- Split-screen interfaces for complex workflows.
+- Keyboard-friendly navigation.
+
+## Tablet experience
+
+For screens between approximately 768px and 1024px:
+
+- Collapsible sidebar.
+- Responsive dashboard cards.
+- Adaptive table layouts.
+- Two-column forms where appropriate.
+- Touch-friendly controls.
+- Optimized navigation.
+
+## Mobile experience
+
+For screens below approximately 768px:
+
+- Replace the desktop sidebar with a mobile navigation system.
+- Use a compact top header.
+- Add a mobile-friendly bottom navigation for frequently used functions.
+- Provide a hamburger menu for secondary modules.
+- Use single-column layouts.
+- Convert complex data tables into responsive cards or horizontally scrollable data views only where unavoidable.
+- Make forms easy to complete using mobile keyboards.
+- Use appropriately sized touch targets.
+- Avoid tiny buttons and icons.
+- Keep important actions accessible without excessive scrolling.
+- Use responsive modals and bottom sheets.
+- Ensure dropdowns and date pickers fit the viewport.
+- Support camera access for uploading invoices, expense receipts and vehicle photographs.
+- Support QR and barcode scanning where the device allows it.
+- Use mobile-friendly confirmation dialogs.
+- Keep financial figures readable.
+- Never allow important text or controls to overflow the screen.
+- Avoid unnecessary horizontal scrolling.
+
+Mobile users must be able to perform actual business operations, not just view reports.
+
+The owner must be able to:
+
+- Check sales from mobile.
+- View branch performance.
+- Approve expenses.
+- Approve discounts.
+- Approve refunds.
+- Review cash closing.
+- Check stock.
+- Receive financial alerts.
+- View GST reports.
+- Review employee activity.
+- Download invoices.
+- Search customers.
+- Monitor the complete business.
+
+Store employees must be able to:
+
+- Create customers.
+- Register leads.
+- Generate quotations.
+- Create bookings.
+- Record payments.
+- Generate invoices.
+- Check inventory.
+- Scan vehicle QR codes.
+- Create expenses.
+- Register service requests.
+- Update job cards.
+
+Test all important screens at mobile widths of 320px, 375px, 390px, 430px and tablet widths.
+
+Implement responsive behavior using CSS breakpoints and modern responsive layout techniques.
+
+Ensure the application behaves like an installable Progressive Web App (PWA), where supported.
+
+---
+
+# 6. APPLICATION NAVIGATION STRUCTURE
+
+Create the following primary navigation.
+
+## MAIN MENU
+
+1. Dashboard
+2. CRM
+3. Sales & POS
+4. Customers
+5. Bookings
+6. Vehicle Inventory
+7. Spare Parts & Accessories
+8. Battery Management
+9. Purchase
+10. Suppliers
+11. Finance & Exchange
+12. Accounting
+13. GST & Taxation
+14. Expenses
+15. Cash & Bank
+16. Service Centre
+17. Warranty Management
+18. Employees
+19. Reports & Analytics
+20. Notifications
+21. Audit & Security
+
+## ADMINISTRATION
+
+22. Branch Management
+23. User Management
+24. Roles & Permissions
+25. Approval Workflows
+26. Product & Brand Management
+27. Tax Configuration
+28. Invoice Configuration
+29. Payment Configuration
+30. Integrations
+31. System Settings
+
+Organize navigation into logical groups.
+
+Only show modules that the logged-in user has permission to access.
+
+---
+
+# 7. MULTI-BRANCH MANAGEMENT
+
+Create a centralized multi-branch architecture.
+
+Requirements:
+
+- One organization with multiple branches.
+- Unlimited branch creation.
+- Unique branch IDs.
+- Branch names and addresses.
+- Branch city and state.
+- Branch-specific GST registration.
+- Branch-specific invoice numbering.
+- Branch-specific employees.
+- Branch-specific inventory.
+- Branch-specific sales.
+- Branch-specific expenses.
+- Branch-specific cashbooks.
+- Branch-specific reporting.
+- Inter-branch stock transfers.
+- Centralized purchase management.
+- Consolidated owner dashboard.
+
+The owner must be able to switch between:
+
+- All branches.
+- Store A.
+- Store B.
+- Any future branch.
+
+All branch-specific records must be linked to a branch ID.
+
+Implement server-side branch-level access control.
+
+Never rely solely on frontend filtering for data security.
+
+Support multiple GST registrations within one organization if business expansion requires them.
+
+---
+
+# 8. CRM MODULE
+
+Develop a complete customer relationship management system.
+
+## Customer Management
+
+Customer fields:
+
+- Customer ID.
+- Customer name.
+- Mobile number.
+- Alternate mobile number.
+- Email.
+- Billing address.
+- Delivery address.
+- City.
+- State.
+- PIN code.
+- GSTIN where applicable.
+- Customer type.
+- Customer source.
+- Assigned salesperson.
+- Creation date.
+- Notes.
+- Purchase history.
+- Payment history.
+- Service history.
+
+## Lead Management
+
+Create the following lead pipeline:
+
+New Lead → Contacted → Interested → Showroom Visit → Test Ride → Quotation → Negotiation → Booking → Converted / Lost.
+
+Features:
+
+- Manual lead creation.
+- Lead assignment.
+- Lead source.
+- Lead follow-ups.
+- Reminder scheduling.
+- Customer interest tracking.
+- Budget tracking.
+- Preferred model.
+- Lead status.
+- Lost reason.
+- Call notes.
+- WhatsApp communication.
+- Lead conversion tracking.
+- Duplicate lead detection.
+
+## CRM Dashboard
+
+Show:
+
+- Total leads.
+- New leads.
+- Contacted leads.
+- Pending follow-ups.
+- Showroom visits.
+- Test rides.
+- Quotations.
+- Converted leads.
+- Lost leads.
+- Conversion percentage.
+- Salesperson performance.
+- Branch-wise lead performance.
+
+---
+
+# 9. VEHICLE INVENTORY MANAGEMENT
+
+Create an advanced vehicle inventory module.
+
+Every individual vehicle must have its own unique record.
+
+Vehicle fields:
+
+- Vehicle ID.
+- Brand.
+- Model.
+- Variant.
+- Colour.
+- Chassis number.
+- VIN, where applicable.
+- Motor number.
+- Battery serial number.
+- Battery capacity.
+- Manufacturing date.
+- Purchase date.
+- Supplier.
+- Purchase invoice.
+- Purchase price.
+- Transportation cost.
+- Additional landed cost.
+- Total vehicle cost.
+- Selling price.
+- GST classification.
+- Current branch.
+- Stock status.
+- Warranty details.
+- QR code.
+
+Vehicle status options:
+
+- Ordered.
+- In Transit.
+- Received.
+- Available.
+- Reserved.
+- Test Ride.
+- Sold.
+- Transferred.
+- Service Hold.
+- Returned.
+
+Features:
+
+- QR code generation.
+- QR scanning.
+- Vehicle history.
+- Stock transfer.
+- Physical stock verification.
+- Stock ageing.
+- Inventory valuation.
+- Purchase cost tracking.
+- Vehicle-wise profitability.
+- Duplicate chassis prevention.
+- Stock discrepancy alerts.
+
+A vehicle must not be sold without selecting its unique vehicle record.
+
+---
+
+# 10. SPARE PARTS, ACCESSORIES AND BATTERY INVENTORY
+
+Create separate inventory categories.
+
+## Spare Parts
+
+- SKU.
+- Product name.
+- Brand.
+- Category.
+- HSN.
+- Unit.
+- Purchase price.
+- Selling price.
+- GST rate.
+- Current quantity.
+- Minimum quantity.
+- Reorder level.
+- Supplier.
+- Storage location.
+
+## Accessories
+
+- Product code.
+- Product name.
+- Category.
+- Brand.
+- Purchase price.
+- Selling price.
+- GST.
+- Current stock.
+- Stock movement history.
+
+## Battery Management
+
+- Battery model.
+- Serial number.
+- Manufacturer.
+- Voltage.
+- Capacity.
+- Purchase cost.
+- Purchase date.
+- Warranty period.
+- Warranty status.
+- Current location.
+- Vehicle assignment.
+- Replacement history.
+- Warranty claim status.
+
+Support:
+
+- Batch tracking.
+- Serial number tracking.
+- Purchase entries.
+- Sales entries.
+- Service consumption.
+- Stock transfers.
+- Returns.
+- Adjustments.
+- Inventory valuation.
+
+---
+
+# 11. DEAD STOCK AND STOCK AGEING
+
+Build a dedicated dead stock management dashboard.
+
+Automatically categorize inventory by ageing:
+
+- 0–30 days.
+- 31–60 days.
+- 61–90 days.
+- 90+ days.
+
+Allow configurable ageing thresholds.
+
+Reports:
+
+- Dead stock value.
+- Slow-moving vehicles.
+- Slow-moving spare parts.
+- Excess inventory.
+- Non-moving accessories.
+- Stock with declining margins.
+- Branch-wise dead stock.
+- Inventory ageing by supplier.
+
+Calculate stock ageing using actual goods receipt or vehicle acquisition dates.
+
+Do not use arbitrary dates.
+
+---
+
+# 12. PURCHASE AND SUPPLIER MANAGEMENT
+
+Create a complete supplier management module.
+
+Supplier fields:
+
+- Supplier ID.
+- Supplier name.
+- Mobile number.
+- Email.
+- Address.
+- GSTIN.
+- State.
+- Payment terms.
+- Credit limit.
+- Opening balance.
+- Bank information.
+- Supplier category.
+
+Purchase workflow:
+
+Purchase Requisition → Purchase Order → Approval → Supplier Invoice → Goods Received Note → Stock Verification → Purchase Posting → Supplier Payable.
+
+Features:
+
+- Purchase orders.
+- Purchase bills.
+- Goods Received Notes.
+- Partial goods receipt.
+- Purchase returns.
+- Supplier payments.
+- Supplier outstanding.
+- Supplier ledger.
+- Purchase price comparison.
+- Supplier-wise purchase history.
+- Supplier GST reports.
+- Purchase register.
+- Pending purchase orders.
+- Goods received vs ordered report.
+
+Implement purchase order, goods receipt and supplier invoice matching.
+
+Create alerts for quantity and price discrepancies.
+
+---
+
+# 13. SALES, POS AND BILLING
+
+Create a professional point-of-sale and vehicle sales system.
+
+The billing interface should be fast and simple.
+
+Support:
+
+- Vehicle sales.
+- Spare parts sales.
+- Accessories sales.
+- Battery sales.
+- Service billing.
+- Multiple items per invoice.
+- Multiple payment modes.
+- Partial payments.
+- Discounts.
+- GST calculations.
+- Customer credit, where authorized.
+- Cash sales.
+- UPI sales.
+- Finance sales.
+- Exchange sales.
+
+Documents:
+
+- Quotation.
+- Proforma Invoice.
+- Sales Order.
+- Booking Receipt.
+- GST Tax Invoice.
+- Bill of Supply, where applicable.
+- Payment Receipt.
+- Delivery Challan.
+- Credit Note.
+- Debit Note.
+- Sales Return.
+
+Invoice requirements:
+
+- Singla Motors branding.
+- Logo placeholder.
+- Branch details.
+- GSTIN.
+- Invoice number.
+- Invoice date.
+- Customer information.
+- Vehicle information.
+- Chassis number.
+- Motor number.
+- Product description.
+- HSN.
+- Taxable value.
+- GST breakup.
+- Discounts.
+- Grand total.
+- Payment details.
+- Terms and conditions.
+- Authorized signature area.
+
+Generate professional printable PDFs.
+
+Support thermal printing where configured.
+
+Support PDF downloading and WhatsApp sharing.
+
+Implement controlled invoice numbering by branch and financial year.
+
+Do not allow deletion of finalized invoices.
+
+Use proper cancellation and credit-note/reversal workflows.
+
+---
+
+# 14. GST AND TAX MANAGEMENT
+
+Develop a configurable Indian GST engine.
+
+Support:
+
+- CGST.
+- SGST.
+- IGST.
+- UTGST where applicable.
+- Cess where applicable.
+- HSN/SAC codes.
+- Tax rates.
+- Tax-inclusive pricing.
+- Tax-exclusive pricing.
+- Intra-state transactions.
+- Inter-state transactions.
+- Place of supply.
+- Reverse charge.
+- Exempt items.
+- Nil-rated supplies.
+- Credit notes.
+- Debit notes.
+- Input tax credit.
+- Output tax liability.
+- GST registration management.
+
+## GST Reports
+
+Generate:
+
+- GSTR-1 data.
+- GSTR-3B summary.
+- GSTR-2B reconciliation.
+- Sales Register.
+- Purchase Register.
+- B2B Sales Register.
+- B2C Sales Register.
+- HSN Summary.
+- Input Tax Credit Register.
+- Output Tax Register.
+- GST Liability Report.
+- GST Payment Report.
+- Credit/Debit Note Register.
+- E-Invoice Register.
+- E-Way Bill Register.
+
+Allow:
+
+- Monthly filtering.
+- Quarterly filtering.
+- Financial year filtering.
+- Branch filtering.
+- GSTIN filtering.
+- Excel export.
+- PDF export.
+- JSON/CSV export where supported.
+
+Implement authorized GST API integrations where available.
+
+Do not claim that returns have been filed merely because a report has been generated.
+
+GST rates, HSN classifications, EV taxation and statutory applicability must be configurable and validated by a qualified CA.
+
+Never hardcode one GST rate for all products.
+
+---
+
+# 15. COMPLETE ACCOUNTING AND BOOKKEEPING
+
+Build a proper double-entry accounting system.
+
+This is a mandatory core feature.
+
+## Chart of Accounts
+
+Create default account groups:
+
+Assets:
+
+- Cash.
+- Bank.
+- Inventory.
+- Customer Receivables.
+- GST Input Credit.
+- Fixed Assets.
+
+Liabilities:
+
+- Supplier Payables.
+- GST Output Liability.
+- Loans Payable.
+- Other Liabilities.
+
+Equity:
+
+- Capital.
+- Drawings.
+- Retained Earnings.
+
+Income:
+
+- Vehicle Sales.
+- Spare Parts Sales.
+- Accessories Sales.
+- Service Income.
+- Other Income.
+
+Expenses:
+
+- Cost of Goods Sold.
+- Rent.
+- Salaries.
+- Electricity.
+- Marketing.
+- Transportation.
+- Repairs.
+- Bank Charges.
+- Administrative Expenses.
+- Depreciation.
+
+## Accounting Features
+
+- Chart of Accounts.
+- Journal Entries.
+- General Ledger.
+- Cashbook.
+- Bankbook.
+- Trial Balance.
+- Profit and Loss.
+- Balance Sheet.
+- Cash Flow Statement.
+- Customer Ledger.
+- Supplier Ledger.
+- Accounts Receivable.
+- Accounts Payable.
+- Fixed Asset Register.
+- Depreciation.
+- Opening Balances.
+- Financial Year Management.
+- Period Closing.
+- Bank Reconciliation.
+
+## AUTOMATIC ACCOUNTING ENGINE
+
+Every posted business transaction must automatically create the correct accounting entries.
+
+Example: Vehicle sale.
+
+Debit:
+
+- Customer / Cash / Bank account, as appropriate.
+
+Credit:
+
+- Vehicle Sales Revenue.
+- Output GST Liability, where applicable.
+
+Also record:
+
+Debit:
+
+- Cost of Goods Sold.
+
+Credit:
+
+- Vehicle Inventory.
+
+Example: Purchase.
+
+Debit:
+
+- Inventory or expense.
+- Eligible Input GST.
+
+Credit:
+
+- Supplier Payable.
+
+Example: Customer payment.
+
+Debit:
+
+- Cash or Bank.
+
+Credit:
+
+- Customer Receivable.
+
+Use proper account mappings based on transaction type and tax treatment.
+
+All journal entries must balance.
+
+Never permit a posted unbalanced accounting transaction.
+
+Use database transactions to ensure that the invoice, inventory movement and accounting entries either all succeed or all fail.
+
+## Financial Reports
+
+- Daily P&L.
+- Monthly P&L.
+- Annual P&L.
+- Branch-wise P&L.
+- Consolidated P&L.
+- Balance Sheet.
+- Trial Balance.
+- Cash Flow.
+- Gross Profit.
+- Net Profit.
+- Customer Outstanding.
+- Supplier Outstanding.
+- Receivables Ageing.
+- Payables Ageing.
+- Bank Reconciliation.
+- Tax Liability.
+
+Use configurable financial years, with April–March as the default Indian financial year.
+
+---
+
+# 16. EXPENSE MANAGEMENT
+
+Create a comprehensive expense management module.
+
+Default categories:
+
+- Rent.
+- Electricity.
+- Internet.
+- Salaries.
+- Transportation.
+- Marketing.
+- Advertising.
+- Repairs.
+- Maintenance.
+- Travel.
+- Office Supplies.
+- Loading/Unloading.
+- Bank Charges.
+- Professional Fees.
+- Miscellaneous.
+
+Expense fields:
+
+- Expense ID.
+- Expense date.
+- Branch.
+- Category.
+- Description.
+- Amount.
+- GST details, where applicable.
+- Payment method.
+- Paid by.
+- Vendor.
+- Receipt image.
+- Invoice attachment.
+- Approval status.
+- Approved by.
+- Accounting reference.
+
+Features:
+
+- Expense creation.
+- Expense approval.
+- Recurring expenses.
+- Petty cash.
+- Reimbursements.
+- Expense reports.
+- Category-wise analysis.
+- Branch-wise analysis.
+- Employee-wise analysis.
+- Expense vs budget.
+
+---
+
+# 17. CASH AND BANK MANAGEMENT
+
+Create separate cash and bank management systems.
+
+Cash management:
+
+- Opening cash.
+- Cash receipts.
+- Cash sales.
+- Cash expenses.
+- Cash refunds.
+- Cash deposits.
+- Cash withdrawals.
+- Expected closing balance.
+- Physical closing balance.
+- Cash discrepancy.
+- Closing approval.
+
+Bank management:
+
+- Multiple bank accounts.
+- Bank transaction records.
+- Bank deposits.
+- Bank withdrawals.
+- Customer collections.
+- Supplier payments.
+- Bank reconciliation.
+- Statement import.
+- Transaction matching.
+
+UPI management:
+
+- UPI transaction ID.
+- Payment reference.
+- Amount.
+- Date.
+- Invoice reference.
+- Payment status.
+- Verification status.
+
+Never consider an employee-entered UPI transaction as independently verified.
+
+---
+
+# 18. CUSTOMER FINANCE AND LOAN MANAGEMENT
+
+Support vehicle finance transactions.
+
+Features:
+
+- Finance company master.
+- Loan application.
+- Customer details.
+- KYC documents.
+- Loan amount.
+- Down payment.
+- Approval status.
+- Approved amount.
+- Disbursement status.
+- Disbursement reference.
+- Disbursement date.
+- Pending amount.
+- Finance reconciliation.
+
+Clearly distinguish:
+
+- Applied amount.
+- Approved amount.
+- Disbursed amount.
+- Amount actually received.
+
+Do not mark an approved loan as a completed collection.
+
+---
+
+# 19. OLD VEHICLE EXCHANGE MANAGEMENT
+
+Create an exchange module.
+
+Fields:
+
+- Customer details.
+- Old vehicle brand.
+- Model.
+- Registration number.
+- Chassis number.
+- Vehicle condition.
+- Photographs.
+- Inspection report.
+- Evaluated value.
+- Approved exchange value.
+- Approval information.
+- Ownership documents.
+- Exchange transaction reference.
+
+When an exchange vehicle is accepted as inventory, create the appropriate inventory and accounting records.
+
+---
+
+# 20. SERVICE CENTRE MANAGEMENT
+
+Build a complete workshop management system.
+
+Features:
+
+- Service appointments.
+- Customer vehicle records.
+- Vehicle service history.
+- Job cards.
+- Vehicle inspection.
+- Customer complaints.
+- Technician assignment.
+- Work estimation.
+- Customer approval.
+- Spare parts consumption.
+- Labour charges.
+- Service invoice.
+- Job status.
+- Delivery confirmation.
+
+Job card statuses:
+
+- Received.
+- Inspection Pending.
+- Diagnosis.
+- Estimate Pending.
+- Customer Approval Pending.
+- Work in Progress.
+- Quality Check.
+- Ready for Delivery.
+- Delivered.
+
+EV-specific service records:
+
+- Battery health.
+- Battery serial number.
+- Motor details.
+- Controller issues.
+- Charger issues.
+- Electrical faults.
+- Charging complaints.
+- Range complaints.
+- Battery replacement.
+- Warranty claims.
+
+Every spare part consumed must be linked to a job card.
+
+---
+
+# 21. WARRANTY MANAGEMENT
+
+Create warranty records for:
+
+- Vehicle.
+- Battery.
+- Motor.
+- Controller.
+- Charger.
+- Other covered components.
+
+Features:
+
+- Warranty start date.
+- Warranty end date.
+- Warranty duration.
+- Warranty terms.
+- Warranty claim.
+- Warranty inspection.
+- Claim status.
+- Replacement history.
+- Supplier/manufacturer claim.
+- Customer notification.
+
+Generate automatic warranty expiry reminders.
+
+---
+
+# 22. EMPLOYEE MANAGEMENT
+
+Create employee profiles.
+
+Fields:
+
+- Employee ID.
+- Name.
+- Mobile.
+- Email.
+- Address.
+- Designation.
+- Branch.
+- Joining date.
+- Salary.
+- Commission.
+- Incentives.
+- Documents.
+- Employment status.
+
+Features:
+
+- Attendance.
+- Leave.
+- Salary records.
+- Payroll reports.
+- Sales commissions.
+- Performance.
+- Branch assignment.
+- Activity logs.
+
+Track:
+
+- Leads generated.
+- Leads converted.
+- Vehicles sold.
+- Revenue.
+- Gross profit.
+- Discounts.
+- Expenses submitted.
+- Customer complaints.
+- Follow-up performance.
+
+---
+
+# 23. OWNER COMMAND CENTRE
+
+Create an advanced owner dashboard.
+
+This must be the most informative screen in the entire application.
+
+Show:
+
+## Business Overview
+
+- Today's sales.
+- Today's revenue.
+- Monthly revenue.
+- Vehicles sold.
+- Gross profit.
+- Net profit.
+- Total expenses.
+- Customer receivables.
+- Supplier payables.
+- Total inventory value.
+- Total dead stock value.
+
+## Branch Comparison
+
+Compare:
+
+- Sales.
+- Revenue.
+- Gross profit.
+- Expenses.
+- Collections.
+- Leads.
+- Conversions.
+- Inventory.
+- Dead stock.
+- Employee performance.
+
+## Financial Summary
+
+Separate:
+
+- Cash received.
+- UPI received.
+- Bank received.
+- Finance disbursements received.
+- Pending finance.
+- Customer outstanding.
+- Expenses.
+- Cash discrepancies.
+
+Do not confuse revenue, profit, cash collections and outstanding receivables.
+
+## Pending Approvals
+
+Show:
+
+- Discounts.
+- Refunds.
+- Expenses.
+- Stock adjustments.
+- Purchase approvals.
+- Invoice cancellations.
+- Journal entries.
+
+## Security Alerts
+
+Show:
+
+- Cash mismatches.
+- Unusual discounts.
+- Suspicious refunds.
+- Stock discrepancies.
+- Unauthorized attempts.
+- Unusual expenses.
+- Frequent invoice cancellations.
+- Unusual employee activity.
+
+## Dashboard Filters
+
+- Today.
+- Yesterday.
+- This week.
+- This month.
+- Previous month.
+- Financial year.
+- Custom dates.
+- All branches.
+- Individual branch.
+
+Every dashboard KPI must link to the underlying filtered records.
+
+---
+
+# 24. ADVANCED BUSINESS REPORTING
+
+Create a centralized reporting module.
+
+Reports must include:
+
+SALES:
+
+- Daily Sales Register.
+- Monthly Sales Register.
+- Annual Sales Register.
+- Branch-wise Sales Register.
+- Vehicle-wise Sales Register.
+- Brand-wise Sales Register.
+- Model-wise Sales Register.
+- Employee-wise Sales Register.
+- Cash Sales Register.
+- Finance Sales Register.
+- Exchange Sales Register.
+- Sales Return Register.
+- Cancelled Sales Register.
+- Discount Register.
+
+PURCHASE:
+
+- Purchase Register.
+- Supplier-wise Purchase.
+- Purchase Return.
+- Purchase Order.
+- GRN Register.
+- Purchase Outstanding.
+
+INVENTORY:
+
+- Stock Register.
+- Vehicle Stock.
+- Spare Parts Stock.
+- Battery Stock.
+- Accessories Stock.
+- Stock Movement.
+- Stock Transfer.
+- Stock Adjustment.
+- Stock Ageing.
+- Dead Stock.
+- Inventory Valuation.
+- Physical Stock Variance.
+
+FINANCE:
+
+- Cashbook.
+- Bankbook.
+- Expense Register.
+- Customer Outstanding.
+- Supplier Outstanding.
+- Receivables.
+- Payables.
+- General Ledger.
+- Trial Balance.
+- P&L.
+- Balance Sheet.
+- Cash Flow.
+- GST Reports.
+- Bank Reconciliation.
+
+CRM:
+
+- Lead Register.
+- Follow-up Register.
+- Customer Register.
+- Lead Conversion.
+- Lost Leads.
+- Salesperson Performance.
+- Test Ride Register.
+
+SERVICE:
+
+- Job Card Register.
+- Service Sales.
+- Parts Consumption.
+- Technician Performance.
+- Warranty Claims.
+
+All relevant reports must support date, branch, status and transaction-type filters.
+
+Provide Excel, CSV and PDF export.
+
+---
+
+# 25. ANTI-FRAUD AND SECURITY ENGINE
+
+This is a top-level business requirement.
+
+Implement a maker-checker approval architecture.
+
+Example:
+
+Salesperson creates a transaction.
+Manager reviews the transaction.
+Owner approves sensitive financial actions.
+System records the complete event.
+
+Rules:
+
+1. No permanent deletion of posted invoices.
+2. No permanent deletion of posted payments.
+3. No unauthorized discounts.
+4. No unauthorized refunds.
+5. No unapproved stock adjustments.
+6. No self-approval of sensitive expenses.
+7. No unauthorized journal editing.
+8. No unauthorized changes to purchase prices.
+9. No manual inventory reduction without a reason and authorization.
+10. No modification of finalized accounting periods by ordinary employees.
+
+Create append-only audit logs.
+
+Each audit event should include:
+
+- User ID.
+- User name.
+- Organization.
+- Branch.
+- Action.
+- Entity type.
+- Record ID.
+- Previous value.
+- New value.
+- Reason.
+- Timestamp.
+- Approval details.
+- Session/device reference where available.
+
+Audit history must not be editable by normal users.
+
+Implement:
+
+- Role-based access.
+- Branch-based access.
+- Two-factor authentication.
+- Session expiry.
+- Failed login tracking.
+- Login notifications.
+- Password security.
+- Sensitive-action confirmation.
+- Approval notifications.
+- Automatic backup.
+- Restore testing.
+
+Build a suspicious activity detection system.
+
+It should flag patterns such as:
+
+- Repeated invoice cancellations.
+- Excessive discounts.
+- Frequent cash shortages.
+- Unusual expenses.
+- Repeated stock adjustments.
+- Unusual refund activity.
+- Supplier price anomalies.
+
+These should generate review alerts, not automatic allegations.
+
+---
+
+# 26. USER ROLES AND PERMISSIONS
+
+Create these default roles:
+
+SUPER ADMIN / OWNER:
+
+- Complete organization access.
+- All branches.
+- All financial records.
+- All reports.
+- All approvals.
+- User and permission management.
+- System settings.
+
+BRANCH MANAGER:
+
+- Assigned branch operations.
+- CRM.
+- Sales.
+- Inventory.
+- Purchase requests.
+- Employee activity.
+- Limited expenses.
+- Authorized approvals.
+
+SALES EXECUTIVE:
+
+- Leads.
+- Customers.
+- Quotations.
+- Test rides.
+- Bookings.
+- Sales within permitted limits.
+
+CASHIER / ACCOUNTANT:
+
+- Billing.
+- Collections.
+- Cash closing.
+- Bank entries.
+- Accounting records according to permissions.
+
+INVENTORY MANAGER:
+
+- Vehicle stock.
+- Spare parts.
+- Battery stock.
+- Stock movements.
+- Transfers.
+- Stock verification.
+
+SERVICE MANAGER:
+
+- Job cards.
+- Technicians.
+- Service estimates.
+- Parts consumption.
+
+TECHNICIAN:
+
+- Assigned job cards.
+- Inspection updates.
+- Parts usage requests.
+
+Allow the owner to create custom roles.
+
+Support permission levels:
+
+- View.
+- Create.
+- Edit.
+- Approve.
+- Export.
+- Delete drafts.
+- Post transactions.
+- Reverse transactions.
+
+Finalized financial transactions must never be deletable through ordinary user permissions.
+
+---
+
+# 27. NOTIFICATIONS AND WHATSAPP AUTOMATION
+
+Create an in-app notification centre.
+
+Notifications:
+
+- New lead.
+- New booking.
+- Vehicle sale.
+- Payment received.
+- Refund requested.
+- Expense approval.
+- Stock discrepancy.
+- Low inventory.
+- Dead stock.
+- Cash mismatch.
+- Warranty expiry.
+- Service reminder.
+- Pending finance disbursement.
+
+Integrate the official WhatsApp Business Platform/API where configured.
+
+Automated messages:
+
+- Lead acknowledgement.
+- Quotation.
+- Booking confirmation.
+- Payment receipt.
+- Invoice.
+- Delivery confirmation.
+- Service reminders.
+- Warranty reminders.
+- Customer feedback.
+
+Owner alerts must be independent of the store manager's account.
+
+---
+
+# 28. GLOBAL SEARCH AND QUICK ACTIONS
+
+Create a powerful global search.
+
+Search across:
+
+- Customers.
+- Mobile numbers.
+- Invoices.
+- Vehicles.
+- Chassis numbers.
+- Motor numbers.
+- Battery serial numbers.
+- Products.
+- Suppliers.
+- Purchase bills.
+- Job cards.
+- Payments.
+- Employees.
+
+Quick actions:
+
+- New Sale.
+- New Customer.
+- New Lead.
+- New Quotation.
+- New Purchase.
+- New Expense.
+- New Booking.
+- New Service Job.
+- Stock Transfer.
+- Record Payment.
+
+Ensure users only see results they are authorized to access.
+
+---
+
+# 29. TECHNICAL ARCHITECTURE
+
+Use a scalable modular monolith.
+
+Recommended stack:
+
+Frontend:
+
+- React.
+- TypeScript.
+- Next.js.
+- Tailwind CSS.
+- shadcn/ui.
+- Lucide icons.
+
+Backend:
+
+- Node.js.
+- NestJS or an appropriately structured server-side TypeScript architecture.
+- REST APIs.
+- OpenAPI documentation.
+
+Database:
+
+- PostgreSQL.
+
+ORM:
+
+- Prisma or Drizzle.
+
+Background processing:
+
+- Redis.
+- BullMQ.
+
+Storage:
+
+- S3-compatible object storage.
+
+Authentication:
+
+- Secure session-based authentication.
+- Role-based authorization.
+- Branch-level authorization.
+- MFA for sensitive accounts.
+
+Reporting:
+
+- Recharts.
+- Server-side report generation.
+- ExcelJS.
+- PDF generation.
+
+Monitoring:
+
+- Error monitoring.
+- Server logs.
+- Database monitoring.
+- Background job monitoring.
+
+Use clean architecture and clearly separated business modules.
+
+Do not place financial calculations, permission checks or tax logic exclusively in frontend components.
+
+All critical validation must occur on the backend.
+
+Use database transactions for operations involving:
+
+- Sales.
+- Payments.
+- Inventory.
+- Accounting.
+- Refunds.
+- Purchase.
+- Stock transfers.
+
+Ensure financial integrity across all modules.
+
+---
+
+# 30. DATABASE DESIGN REQUIREMENTS
+
+Create a normalized PostgreSQL schema.
+
+Major tables/entities:
+
+ORGANIZATION:
+
+- organizations
+- branches
+- gst_registrations
+
+AUTHENTICATION:
+
+- users
+- roles
+- permissions
+- role_permissions
+- user_roles
+- user_branch_access
+- sessions
+
+CRM:
+
+- customers
+- leads
+- lead_activities
+- followups
+- customer_addresses
+
+PRODUCTS:
+
+- brands
+- product_categories
+- products
+- product_variants
+- vehicle_units
+- batteries
+- serial_numbers
+
+INVENTORY:
+
+- stock_balances
+- stock_movements
+- stock_transfers
+- stock_adjustments
+- stock_audits
+- goods_receipts
+
+PURCHASE:
+
+- suppliers
+- purchase_orders
+- purchase_order_items
+- purchase_bills
+- purchase_bill_items
+- goods_receipt_notes
+
+SALES:
+
+- quotations
+- quotation_items
+- bookings
+- sales_orders
+- sales_invoices
+- sales_invoice_items
+- sales_returns
+- credit_notes
+- debit_notes
+
+PAYMENTS:
+
+- payment_transactions
+- payment_allocations
+- receipts
+- refunds
+- bank_accounts
+- bank_transactions
+- bank_reconciliations
+
+FINANCE:
+
+- finance_companies
+- loan_applications
+- loan_disbursements
+- exchange_vehicles
+- exchange_inspections
+
+ACCOUNTING:
+
+- chart_of_accounts
+- journal_entries
+- journal_lines
+- accounting_periods
+- fiscal_years
+- ledger_mappings
+- fixed_assets
+- depreciation_entries
+
+GST:
+
+- tax_rates
+- hsn_codes
+- tax_transactions
+- gst_return_periods
+- gst_reconciliations
+- einvoice_records
+- ewaybill_records
+
+EXPENSES:
+
+- expense_categories
+- expenses
+- expense_attachments
+- expense_approvals
+- petty_cash_transactions
+
+SERVICE:
+
+- service_appointments
+- job_cards
+- job_card_items
+- technicians
+- parts_consumption
+- warranty_records
+- warranty_claims
+
+HR:
+
+- employees
+- attendance
+- leaves
+- salaries
+- commissions
+
+SECURITY:
+
+- audit_logs
+- approval_requests
+- notifications
+- security_events
+
+Create appropriate foreign keys, indexes, unique constraints and database validations.
+
+Use organization_id and branch_id consistently.
+
+Financial documents must have proper references to their originating business transactions.
+
+Use decimal/numeric database types for monetary values, never floating-point types.
+
+Use a consistent transaction numbering system.
+
+Use soft deletion only for appropriate master data and drafts, never as a replacement for proper financial reversal workflows.
+
+Implement audit log retention and backup policies.
+
+---
+
+# 31. INITIAL SETUP WIZARD
+
+Create a first-time setup process.
+
+On first login, guide the owner through:
+
+STEP 1:
+Business details:
+
+- Business name.
+- Logo.
+- Address.
+- Contact information.
+
+Default business name: SINGLA MOTORS.
+
+STEP 2:
+GST configuration:
+
+- GSTIN.
+- State.
+- Registration type.
+- Tax settings.
+- Financial year.
+
+Do not invent GSTIN or statutory details.
+
+STEP 3:
+Branch setup:
+
+- Store A.
+- Store B.
+- City.
+- Address.
+- Branch code.
+
+Allow additional branches.
+
+STEP 4:
+Employee setup:
+
+- Employee names.
+- Roles.
+- Branch assignment.
+
+STEP 5:
+Product setup:
+
+- Vehicle brands.
+- Models.
+- Variants.
+- Spare parts.
+- Accessories.
+- Batteries.
+
+STEP 6:
+Supplier setup.
+
+STEP 7:
+Opening inventory.
+
+STEP 8:
+Opening cash and bank balances.
+
+STEP 9:
+Opening customer and supplier balances.
+
+STEP 10:
+Accounting configuration and chart of accounts.
+
+STEP 11:
+Invoice configuration.
+
+STEP 12:
+Go live.
+
+Provide import tools for Excel and CSV wherever practical.
+
+---
+
+# 32. DEMO DATA AND INITIAL STATE
+
+The application must initially support two demo branches:
+
+- Singla Motors – Store A.
+- Singla Motors – Store B.
+
+These are placeholders until the owner enters actual branch details.
+
+Create optional demo data for:
+
+- Multiple EV brands.
+- Sample vehicles.
+- Sample customers.
+- Sample suppliers.
+- Sample employees.
+- Sample invoices.
+- Sample expenses.
+- Sample stock.
+
+However:
+
+- Clearly label all demo data.
+- Never mix demo financial data with real financial data.
+- Never show invented revenue as actual business revenue.
+- Allow the owner to reset demo data before going live.
+- Start production accounts with genuine business opening balances.
+
+---
+
+# 33. DEVELOPMENT AND IMPLEMENTATION INSTRUCTIONS
+
+IMPORTANT: Follow these instructions throughout development.
+
+Do not attempt to generate the entire application as one enormous frontend component.
+
+Work module by module while maintaining one consistent architecture and design system.
+
+DEVELOPMENT ORDER:
+
+PHASE 1 – FOUNDATION:
+
+- Project setup.
+- Authentication.
+- Database.
+- Organization.
+- Branch management.
+- User management.
+- Roles and permissions.
+- Design system.
+- Responsive navigation.
+
+PHASE 2 – CORE OPERATIONS:
+
+- Product management.
+- Vehicle inventory.
+- Spare parts inventory.
+- Purchase.
+- Suppliers.
+- Sales.
+- POS.
+- Billing.
+- Payments.
+
+PHASE 3 – FINANCIAL SYSTEM:
+
+- Accounting.
+- Chart of accounts.
+- Journal entries.
+- Cashbook.
+- Bankbook.
+- Expenses.
+- GST.
+- Tax reports.
+- Financial statements.
+
+PHASE 4 – CRM AND DEALERSHIP:
+
+- CRM.
+- Leads.
+- Bookings.
+- Finance.
+- Exchange.
+- Delivery.
+- Test rides.
+
+PHASE 5 – AFTER-SALES:
+
+- Service centre.
+- Job cards.
+- Spare parts consumption.
+- Battery tracking.
+- Warranty management.
+
+PHASE 6 – ADVANCED:
+
+- Owner dashboard.
+- Business intelligence.
+- Advanced reporting.
+- Fraud alerts.
+- WhatsApp automation.
+- Integrations.
+
+PHASE 7 – TESTING:
+
+- Mobile responsiveness.
+- Financial calculations.
+- GST calculations.
+- Permission testing.
+- Branch isolation testing.
+- Inventory integrity.
+- Accounting reconciliation.
+- Audit history.
+- Backup and recovery.
+
+After each phase:
+
+- Verify that all features work.
+- Verify database persistence.
+- Test all relevant user permissions.
+- Test desktop and mobile.
+- Fix errors before moving to the next phase.
+
+---
+
+# 34. STRICT DEVELOPMENT RULES
+
+1. Do not build a static mockup and call it a completed ERP.
+2. Do not create buttons that do nothing.
+3. Do not use fake charts for actual financial reports.
+4. Do not hardcode business transactions.
+5. Do not store important business data only in browser local storage.
+6. Do not simulate successful payment verification.
+7. Do not simulate GST filing.
+8. Do not allow frontend-only security checks.
+9. Do not expose sensitive API keys.
+10. Do not use floating-point calculations for money.
+11. Do not permit unbalanced accounting entries.
+12. Do not permit duplicate chassis numbers.
+13. Do not permit unauthorized invoice modifications.
+14. Do not create disconnected modules.
+15. Do not sacrifice mobile responsiveness.
+16. Do not sacrifice data security for visual design.
+17. Do not remove existing working features when adding new modules.
+18. Do not overwrite existing business data during updates.
+19. Do not claim a feature is complete if it is only a placeholder.
+20. Clearly identify integrations that require external API credentials or third-party subscriptions.
+
+When a required external integration is unavailable, implement the complete integration interface, configuration settings and appropriate fallback workflow. Clearly mark the integration as pending configuration.
+
+Use secure, real database-backed functionality.
+
+---
+
+# 35. QUALITY ASSURANCE AND ACCEPTANCE TESTS
+
+Before considering the software ready, verify these scenarios:
+
+1. Owner can view both branches.
+2. Branch manager cannot access unauthorized branch data.
+3. Owner can create additional branches.
+4. Vehicle purchase increases inventory.
+5. Vehicle sale reduces inventory.
+6. Vehicle transfer changes branch ownership correctly.
+7. Duplicate chassis numbers are rejected.
+8. Sales invoices calculate GST correctly.
+9. Cash, UPI and finance are separately recorded.
+10. Approved finance is not treated as received money.
+11. Sales generate accounting entries.
+12. Purchases generate accounting entries.
+13. Expenses generate accounting entries.
+14. Refunds require appropriate approval.
+15. Cancelled invoices create reversal records.
+16. Stock adjustments are auditable.
+17. Managers cannot delete finalized transactions.
+18. Customer outstanding is correctly calculated.
+19. Supplier outstanding is correctly calculated.
+20. GST reports reconcile with source transactions.
+21. Profit and loss is calculated from actual posted entries.
+22. Inventory valuation matches the inventory ledger.
+23. Cash closing detects discrepancies.
+24. Service parts are linked to job cards.
+25. Dead stock reports use actual inventory dates.
+26. Owner approvals work from mobile.
+27. All modules function at mobile screen widths.
+28. Database backup and recovery work.
+29. Users cannot bypass server-side permissions.
+30. Audit logs preserve the history of sensitive operations.
+
+---
+
+# 36. FINAL EXPECTED RESULT
+
+Deliver a complete, modern and professional web application named:
+
+SINGLA MOTORS – EV DEALERSHIP MANAGEMENT SYSTEM
+
+The application must provide:
+
+- A centralized owner command centre.
+- Multiple branch management.
+- Complete CRM.
+- Complete POS and billing.
+- Indian GST management.
+- Complete double-entry accounting.
+- Sales and purchase registers.
+- Expense management.
+- Cash and bank management.
+- Vehicle inventory.
+- Spare parts inventory.
+- Battery inventory.
+- Dead stock management.
+- Supplier management.
+- Customer finance.
+- Vehicle exchange.
+- Service centre management.
+- Warranty management.
+- Employee management.
+- Advanced financial reports.
+- Anti-fraud controls.
+- Audit trails.
+- Mobile-friendly business operations.
+- Future-ready architecture.
+
+The owner must be able to understand the complete business position without manually asking employees for reports.
+
+Every vehicle must be traceable.
+
+Every invoice must be traceable.
+
+Every payment must be traceable.
+
+Every expense must be traceable.
+
+Every stock movement must be traceable.
+
+Every important employee action must be traceable.
+
+The final product should feel like a premium commercial ERP product, not a generic AI-generated admin template.
+
+**Start by establishing the project architecture, database schema, design system, authentication and responsive application shell. Then develop the business modules in the specified order.**
+
+Prioritize correctness, financial integrity, security, usability and mobile responsiveness over superficial visual complexity.

@@ -1,0 +1,8 @@
+{
+  "name": "Singla Motors - EV Dealership ERP & POS",
+  "description": "Multi-branch electric vehicle dealership management, lead tracking, showroom billing, vehicle stock, simple accounts, and service workshop for Singla Motors.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
